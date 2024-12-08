@@ -1,3 +1,57 @@
+#2E384D
+ 
+#2E384D
+ 
+Terms of Use
+ 
+By clicking ‘Sign Up’ you agree to our{" "}
+ 
+ Already a user?
+ 
+Login
+ 
+Sign Up
+ 
+Sign In
+ 
+<div className="flex flex-col gap-[2px] justify-start">
+              <label className="text-[12px] font-[400] text-[#00000099] tracking-[-0.14px;] leading-[19.12px]">
+                Username
+              </label>
+              <input
+                type="text"
+                // placeholder="Enter your first name"
+                className="w-full p-[10px] rounded-[4px] border border-[#67676799] h-[44px]"
+              />
+            </div>
+            <div className="flex flex-col gap-[2px] justify-start">
+              <label className="text-[12px] font-[400] text-[#00000099] tracking-[-0.14px;] leading-[19.12px]">
+                Password
+              </label>
+              <input
+                type="text"
+                // placeholder="Enter your first name"
+                className="w-full p-[10px] rounded-[4px] border border-[#67676799] h-[44px]"
+              />
+            </div>
+ 
+import Login from "./auth/login/Login";
+import Signup from "./auth/signup/Signup";
+import "./index.css";
+function App() {
+  return <>
+    <Signup></Signup>
+    <Login></Login>
+  </>;
+}
+
+export default App;
+
+ 
+../../assests/googleLogo.png
+ 
+../../assests/tradeLogo.png
+ 
 <div className="w-[420px] h-[230px] bg-[#FFFFFF] rounded-[10px] flex justify-center items-center">
           <div className="w-[400px] h-[220px] bg-[#FFFFFF] opacity-[50%] rounded-[10px] mb-4 -mt-4 flex justify-center items-center">
             <div className="w-[380px] h-[210px] bg-[#FFFFFF] opacity-[50%] rounded-[10px] mb-4 -mt-4"></div>

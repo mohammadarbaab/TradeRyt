@@ -1,6 +1,7 @@
 import React from "react";
 import tradeLogo from "../../assests/tradeLogo.png";
 import googleLogo from "../../assests/googleLogo.png";
+import { Link } from "react-router-dom";
 
 function Signup() {
   return (
@@ -94,11 +95,13 @@ function Signup() {
           <div className="flex flex-col flex-wrap justify-center items-center gap-[8px]">
             <p className="font-[400] text-[14px] leading-[16px] text-[#8798AD]">
               Already a user?
-              <span className="text-[#574CB1] font-bold ml-2">Login</span>
+              <span className="text-[#574CB1] font-bold ml-2 cursor-pointer">
+                <Link to="/login">Login</Link>
+              </span>
             </p>
             <p className="font-[400] text-[14px] leading-[16px] text-[#8798AD]">
               By clicking ‘Sign Up’ you agree to our{" "}
-              <b className="text-[#2E384D]">Terms of Use</b>
+              <b className="text-[#574CB1]">Terms of Use</b>
             </p>
           </div>
         </div>
