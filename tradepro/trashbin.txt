@@ -1,0 +1,150 @@
+<div className="w-[420px] h-[230px] bg-[#FFFFFF] rounded-[10px] flex justify-center items-center">
+          <div className="w-[400px] h-[220px] bg-[#FFFFFF] opacity-[50%] rounded-[10px] mb-4 -mt-4 flex justify-center items-center">
+            <div className="w-[380px] h-[210px] bg-[#FFFFFF] opacity-[50%] rounded-[10px] mb-4 -mt-4"></div>
+          </div>
+        </div>
+ 
+ <div className="w-[420px] h-[230px] bg-[#FFFFFF] rounded-[10px] flex justify-center items-center">
+          <div className="w-[400px] h-[220px] bg-[#FFFFFF] opacity-[50%] rounded-[10px] mb-4 -mt-4 flex justify-center items-center">
+            <div className="w-[380px] h-[210px] bg-[#FFFFFF] opacity-[50%] rounded-[10px] mb-4 -mt-4"></div>
+          </div>
+        </div>
+ 
+<div className="w-[400px] h-[220px] bg-[#FFFFFF] opacity-[50%] rounded-[10px] mb-4 -mt-4 flex justify-center items-center">
+            <div className="w-[380px] h-[210px] bg-[#FFFFFF] opacity-[50%] rounded-[10px] mb-4 -mt-4"></div>
+          </div>
+ 
+<div className="w-[400px] h-[220px] bg-[#FFFFFF] opacity-[50%] rounded-[10px] mb-4 -mt-4 flex justify-center items-center">
+            <div className="w-[380px] h-[210px] bg-[#FFFFFF] opacity-[50%] rounded-[10px] mb-4 -mt-4"></div>
+          </div>
+ 
+<div className="w-[400px] h-[220px] bg-[#FFFFFF] opacity-[0.5] rounded-[10px] mb-4 -mt-4 flex justify-center items-center">
+            <div className="w-[380px] h-[210px] bg-[#FFFFFF] opacity-[0.5] rounded-[10px] mb-4 -mt-4"></div>
+          </div>
+ 
+<div className="w-[420px] h-[230px] bg-[#FFFFFF] rounded-[10px] flex justify-center items-center">
+          <div className="w-[400px] h-[220px] bg-[#FFFFFF] opacity-[0.5] rounded-[10px] mb-4 -mt-4 flex justify-center items-center">
+            <div className="w-[380px] h-[210px] bg-[#FFFFFF] opacity-[0.5] rounded-[10px] mb-4 -mt-4"></div>
+          </div>
+        </div>
+ 
+red-800 
+ 
+-blue-400
+ 
+border-opacity-15
+ 
+border-black
+ 
+lorem text here
+ 
+ <div className="w-[400px] h-[220px] bg-blue-400 rounded-[10px]  ">
+        <div className="w-[375px] h-[220px] bg-blue-200 rounded-[10px] mb-4"></div>
+        </div>
+ 
+absolute
+ 
+p-[13px]
+ 
+w-[full] flex flex-row flex-wrap justify-center items-center
+ 
+p-[16px]
+ 
+ <input
+              type="checkbox"
+              id="admin"
+              name="roles"
+              value="admin"
+              className="h-[20px] w-[20px] text-[#574CB1] border-[10px] border-[#574CB1] rounded focus:ring-indigo-500"
+            />
+ 
+1
+ 
+First Name
+ 
+First Name
+ 
+First Name
+ 
+bg-blue-400
+ 
+ bg-blue-500
+ 
+
+* {
+  background-color: #352e6b;
+}
+
+ 
+
+* {
+  background-color: #352e6b;
+}
+ 
+items-center
+ 
+1</img>
+ 
+
+      <div className="w-[460px] h-[780px] rounded-[16px] border border-black border-opacity-15 bg-white ">
+        1
+      </div>
+ 
+text-white
+ 
+style={{
+            backgroundColor: "#F7",
+        }}
+ 
+w-[572px] h-[966px] rounded-[16px]]
+ 
+border border-[rgba(0, 0, 0, 0.15);
+ 
+1px solid
+ 
+
+    <div className="bg-gray-100 h-screen flex items-center justify-center">
+      <h1 className="text-4xl font-bold text-blue-600">
+        Hello, Tailwind CSS in React!
+      </h1>
+    </div>
+ 
+
+import reportWebVitals from './reportWebVitals';
+
+ 
+
+
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+ 
+
+reportWebVitals();
+ 
+import "./App.css";
+
+function App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+    </div>
+  );
+}
+
+export default App;
+
+ 
