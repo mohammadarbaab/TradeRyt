@@ -77,7 +77,7 @@ function Login() {
               <p className="font-[400] text-[14px] leading-[16px] text-[#8798AD]">
                 Forgot your Password?
                 <span className="text-[#574CB1] font-bold ml-2 cursor-pointer">
-                  <Link to="/">Reset Your Password</Link>
+                  <Link to="/forget-password">Reset Your Password</Link>
                 </span>
               </p>
               <p className="font-[400] text-[14px] leading-[16px] text-[#8798AD]">

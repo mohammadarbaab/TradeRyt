@@ -1,3 +1,335 @@
+<div className="flex flex-row gap-[6px] justify-center pt-[35px]">
+        <img src={tradeLogo} className="w-[42px] h-[42px]" />
+        <h1 className="text-[24px] font-[600] leading-[47px] tracking-[1.37px] text-[#00000099]">
+          TradeRyt
+        </h1>
+      </div>
+ 
+
+  const [active, setActive] = useState("Dashboard"); // Initially set to 'Dashboard'
+ 
+
+  //   const handleItemClick = (item) => {
+  //     setActive(item); // Set the clicked item as active
+  //   };
+  return (
+    <div
+      className="w-[220px] h-[900px] flex flex-col justify-between"
+      style={{ boxShadow: "4px 0px 12px 0px rgba(0, 0, 0, 0.1)" }}
+    >
+      <div className="flex flex-col ">
+        {/* Logo div start here */}
+        <div className="flex flex-row gap-[6px] justify-center pt-[35px] mb-[20px]">
+          <img src={tradeLogo} className="w-[42px] h-[42px]" />
+          <h1 className="text-[24px] font-[600] leading-[47px] tracking-[1.37px] text-[#00000099]">
+            TradeRyt
+          </h1>
+        </div>
+        {/* logo div end here */}
+        <div
+          className={`relative w-full h-[60px] flex flex-row justify-start items-center px-[32px] gap-[12px] ${
+            active === "dashboard" ? "font-bold" : ""
+          }`}
+          onClick={() => setActive("dashboard")}
+        >
+          {/* Left Border */}
+          {active === "dashboard" && (
+            <div className="absolute left-0 top-[50%] transform -translate-y-[50%] h-[35px] w-[4px] bg-[#4745A4]"></div>
+          )}
+          <img src={dashLogo} alt="icon" />
+          <p className="text-[16px] text-[#2E384D] cursor-pointer">Dashboard</p>
+        </div>
+        <div
+          className={`relative w-full h-[60px] flex flex-row justify-start items-center px-[32px] gap-[12px] ${
+            active === "journal" ? "font-bold" : ""
+          }`}
+          onClick={() => setActive("journal")}
+        >
+          {/* Left Border */}
+          {active === "journal" && (
+            <div className="absolute left-0 top-[50%] transform -translate-y-[50%] h-[35px] w-[4px] bg-[#4745A4]"></div>
+          )}
+          <img src={journalicon} alt="icon" />
+          <p className="text-[16px] text-[#2E384D] cursor-pointer">Journal</p>
+        </div>
+
+        {/* Reports Item */}
+        <div
+          className={`relative w-full h-[60px] flex flex-row justify-start items-center px-[32px] gap-[12px] ${
+            active === "reports" ? "font-bold" : ""
+          }`}
+          onClick={() => setActive("reports")}
+        >
+          {/* Left Border */}
+          {active === "reports" && (
+            <div className="absolute left-0 top-[50%] transform -translate-y-[50%] h-[35px] w-[4px] bg-[#4745A4]"></div>
+          )}
+          <img src={reporticon} alt="icon" />
+          <p className="text-[16px] text-[#2E384D] cursor-pointer">Reports</p>
+        </div>
+
+        {/* Calendar Item */}
+        <div
+          className={`relative w-full h-[60px] flex flex-row justify-start items-center px-[32px] gap-[12px] ${
+            active === "calendar" ? "font-bold" : ""
+          }`}
+          onClick={() => setActive("calendar")}
+        >
+          {/* Left Border */}
+          {active === "calendar" && (
+            <div className="absolute left-0 top-[50%] transform -translate-y-[50%] h-[35px] w-[4px] bg-[#4745A4]"></div>
+          )}
+          <img src={calenderIcon} alt="icon" />
+          <p className="text-[16px] text-[#2E384D] cursor-pointer">Calendar</p>
+        </div>
+
+        {/* Configuration Item */}
+        <div
+          className={`relative w-full h-[60px] flex flex-row justify-start items-center px-[32px] gap-[12px] ${
+            active === "configuration" ? "font-bold" : ""
+          }`}
+          onClick={() => setActive("configuration")}
+        >
+          {/* Left Border */}
+          {active === "configuration" && (
+            <div className="absolute left-0 top-[50%] transform -translate-y-[50%] h-[35px] w-[4px] bg-[#4745A4]"></div>
+          )}
+          <img src={configicon} alt="icon" />
+          <p className="text-[16px] text-[#2E384D] cursor-pointer">
+            Configuration
+          </p>
+        </div>
+      </div>
+      <div className="flex flex-col  ">
+        <div
+          className={`relative w-full h-[60px] flex flex-row justify-start items-center px-[32px] gap-[12px] ${
+            active === "account" ? "font-bold" : ""
+          }`}
+          onClick={() => setActive("account")}
+        >
+          {/* Left Border */}
+          {active === "account" && (
+            <div className="absolute left-0 top-[50%] transform -translate-y-[50%] h-[35px] w-[4px] bg-[#4745A4]"></div>
+          )}
+          <img src={accounticon} alt="icon" />
+          <p className="text-[16px] text-[#2E384D] cursor-pointer">Account</p>
+        </div>
+
+        {/* Help Item */}
+        <div
+          className={`relative w-full h-[60px] flex flex-row justify-start items-center px-[32px] gap-[12px] ${
+            active === "help" ? "font-bold" : ""
+          }`}
+          onClick={() => setActive("help")}
+        >
+          {/* Left Border */}
+          {active === "help" && (
+            <div className="absolute left-0 top-[50%] transform -translate-y-[50%] h-[35px] w-[4px] bg-[#4745A4]"></div>
+          )}
+          <img src={helpicon} alt="icon" />
+          <p className="text-[16px] text-[#2E384D] cursor-pointer">Help</p>
+        </div>
+
+        {/* Log Out Item */}
+        <div
+          className={`relative w-full h-[60px] flex flex-row justify-start items-center px-[32px] gap-[12px] ${
+            active === "logout" ? "font-bold" : ""
+          }`}
+          onClick={() => setActive("logout")}
+        >
+          {/* Left Border */}
+          {active === "logout" && (
+            <div className="absolute left-0 top-[50%] transform -translate-y-[50%] h-[35px] w-[4px] bg-[#4745A4]"></div>
+          )}
+          <img src={logoutIcon} alt="icon" />
+          <p className="text-[16px] text-[#2E384D] cursor-pointer">Log Out</p>
+        </div>
+      </div>
+    </div>
+  );
+}
+ 
+ <div className="w-full h-[60px] flex flex-row justify-start items-center px-[32px] gap-[12px]">
+          <img src={accounticon} alt="icon" />
+          <p className="font-[600] text-[16px] text-[#2E384D]">Account</p>
+        </div>
+        <div className="w-full h-[60px] flex flex-row justify-start items-center px-[32px] gap-[12px]">
+          <img src={helpicon} alt="icon" />
+          <p className="font-[600] text-[16px] text-[#2E384D]">Help</p>
+        </div>
+        <div className="w-full h-[60px] flex flex-row justify-start items-center px-[32px] gap-[12px]">
+          <img src={logoutIcon} alt="icon" />
+          <p className="font-[600] text-[16px] text-[#2E384D]">Log Out</p>
+        </div>
+ 
+<div className="w-full h-[60px] flex flex-row justify-start items-center px-[32px] gap-[12px]">
+          <img src={reporticon} alt="icon" />
+          <p className="font-[600] text-[16px] text-[#2E384D]">Reports</p>
+        </div>
+        <div className="w-full h-[60px] flex flex-row justify-start items-center px-[32px] gap-[12px]">
+          <img src={calenderIcon} alt="icon" />
+          <p className="font-[600] text-[16px] text-[#2E384D]">Calendar</p>
+        </div>
+        <div className="w-full h-[60px] flex flex-row justify-start items-center px-[32px] gap-[12px]">
+          <img src={configicon} alt="icon" />
+          <p className="font-[600] text-[16px] text-[#2E384D]">Configuration</p>
+        </div>
+ 
+ <div 
+        className={`relative w-full h-[60px] flex flex-row justify-start items-center px-[32px] gap-[12px] ${active === 'dashboard' ? 'font-bold' : ''}`}
+        onClick={() => setActive('dashboard')}
+      >
+        {/* Left Border */}
+        {active === 'dashboard' && (
+          <div className="absolute left-0 top-0 h-[48px] w-[4px] bg-[#4745A4]"></div>
+        )}
+        <img src={dashLogo} alt="icon" />
+        <p className="text-[16px] text-[#2E384D]">Dashboard</p>
+      </div>
+      <div 
+        className={`relative w-full h-[60px] flex flex-row justify-start items-center px-[32px] gap-[12px] ${active === 'journal' ? 'font-bold' : ''}`}
+        onClick={() => setActive('journal')}
+      >
+        {/* Left Border */}
+        {active === 'journal' && (
+          <div className="absolute left-0 top-0 h-[48px] w-[4px] bg-[#4745A4]"></div>
+        )}
+        <img src={journalicon} alt="icon" />
+        <p className="text-[16px] text-[#2E384D]">Journal</p>
+      </div>
+ 
+<div 
+        className={`w-full h-[60px] flex flex-row justify-start items-center px-[32px] gap-[12px] ${active === 'dashboard' ? 'font-bold border-l-4 border-[#4745A4]' : ''}`}
+        onClick={() => setActive('dashboard')}
+      >
+        <img src={dashLogo} alt="icon" />
+        <p className="text-[16px] text-[#2E384D]">Dashboard</p>
+      </div>
+      <div 
+        className={`w-full h-[60px] flex flex-row justify-start items-center px-[32px] gap-[12px] ${active === 'journal' ? 'font-bold border-l-4 border-[#4745A4]' : ''}`}
+        onClick={() => setActive('journal')}
+      >
+        <img src={journalicon} alt="icon" />
+        <p className="text-[16px] text-[#2E384D]">Journal</p>
+      </div>
+ 
+<div className="w-full h-[60px] flex flex-row justify-start items-center px-[32px] gap-[12px]">
+          <img src={dashLogo} alt="icon" />
+          <p className="font-[600] text-[16px] text-[#2E384D]">Dashboard</p>
+        </div>
+        <div className="w-full h-[60px] flex flex-row justify-start items-center px-[32px] gap-[12px]">
+          <img src={journalicon} alt="icon" />
+          <p className="font-[600] text-[16px] text-[#2E384D]">Journal</p>
+        </div>
+ 
+<div className="w-full h-[60px] flex flex-row justify-start items-center px-[32px] gap-[12px]">
+          <img src={dashLogo} alt="icon" />
+          <p className="font-[600] text-[16px] text-[#2E384D]">Dashboard</p>
+        </div>
+        <div className="w-full h-[60px] flex flex-row justify-start items-center px-[32px] gap-[12px]">
+          <img src={journalicon} alt="icon" />
+          <p className="font-[600] text-[16px] text-[#2E384D]">Journal</p>
+        </div>
+ 
+  <div className="w-full h-[60px] flex flex-row justify-start items-center px-[32px] gap-[12px]">
+          <img src={journalicon} alt="icon" />
+          <p className="font-[600] text-[16px] text-[#2E384D]">Journal</p>
+        </div>
+ 
+path/to/dashLogo.svg
+ 
+<div className="w-full h-[60px] flex flex-row justify-start items-center px-[32px] gap-[12px]">
+          <img src={dashLogo} alt="icon" />
+          <p className="font-[600] text-[16px] text-[#2E384D]">Dashboard</p>
+        </div>
+ 
+<div className="w-full h-[60px] flex flex-row justify-start items-center px-[32px] gap-[12px]">
+          <img src={dashLogo} alt="icon" />
+          <p className="font-[600] text-[16px] text-[#2E384D]">Dashboard</p>
+        </div>
+ 
+<div className="w-full h-[60px] flex flex-row justify-start items-center px-[32px] gap-[12px]">
+          <img src={dashLogo} alt="icon" />
+          <p className="font-[600] text-[16px] text-[#2E384D]">Dashboard</p>
+        </div>
+ 
+bg-blue-100
+ 
+bg-blue-100
+ 
+bg-blue-900
+ 
+bg-blue-500
+ 
+bg-orange-500
+ 
+w-[220px] h-[900px] bg-orange-500 flex flex-col justify-between
+ 
+h-[50px]
+ 
+
+        <div>3</div>
+ 
+ <div>2</div>
+ 
+<div>1</div>
+ 
+-[#2E384D]
+ 
+-[38px]
+ 
+ <div>2</div>
+        <div>3</div>
+ 
+
+        <div>1</div>
+ 
+justify-between
+ 
+justify-start
+ 
+
+    <div className='flex flex-row'></div>
+ 
+
+      Sidenav
+ 
+<div className="justify-center items-center rounded-[4px] flex w-full bg-[#574CB1] h-[44px] text-[white]">
+            Send
+          </div>
+ 
+mt-[16px]
+ 
+<div>end button</div>
+ 
+g-gray-600
+ 
+bg-green-500
+ 
+bg-orange-400
+ 
+bg-red-500
+ 
+
+          <div></div>
+ 
+
+          <div></div>
+ 
+
+        </div>
+ 
+<div>
+ 
+place-items-center
+ 
+<div className="flex flex-wrap justify-center pla">
+    <div className="w-[500px] h-[400px] rounded-[14px] border"></div>
+    </div>
+ 
+
+      forgetPassword
+ 
 #2E384D
  
 #2E384D
