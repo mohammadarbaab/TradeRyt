@@ -1,3 +1,79 @@
+backgroundSize: "cover",
+            backgroundPosition: "center",
+ 
+// Optional: Add rounded corners if desired
+ 
+/ Apply blur effect
+ 
+// Semi-transparent white background
+ 
+ <div className="flex flex-col gap-8 w-[700px] bg-gray-500 h-[760px] justify-center items-center">
+ 
+
+          <button></button>
+ 
+
+
+body{
+    background-color: red;
+}
+ 
+
+import profile-pic from "../../"
+ 
+
+        <button className="w-[150px] h-[41px] rounded-[6px] bg-[#4159B1] text-[#FFFFFF] font-[600] text-[16px] text-center leading-[21px]">
+          Add Trades
+        </button>
+ 
+border
+ 
+<div className="w-[87px] justify-center h-[52px] items-center flex flex-row gap-[6px] border-l">
+ 
+<div className="w-[87px] justify-center h-[52px] items-center flex flex-row gap-[6px] border-l">
+ 
+<div className="w-[87px] justify-center h-[52px] items-center flex flex-row gap-[6px] border-l">
+ 
+ font-[400] text-[16px] leading-[24px]
+ 
+<button className="border w-[103px] text-[#8798AD] rounded-[8px] h-[38px]">
+            Symbol
+          </button>
+ 
+
+          <button className="border">symbol</button>
+          <button className="border">symbol</button>
+ 
+
+          <button className="border">symbol</button>
+ 
+
+          <button className="border">symbol</button>
+ 
+
+      {/* <div className="flex flex-row gap-2">
+          <div className="">1</div>
+          <div className="">2</div>
+        </div> */}
+ 
+
+      </div>
+ 
+
+      <div className="flex flex-col gap-4 mt-6">
+ 
+bg-gray-800
+ 
+w-64 bg-gray-800 text-white p-4 fixed h-full
+ 
+<div>
+      <SideNav />
+    </div>
+ 
+<div>
+      <SideNav />
+    </div>
+ 
 <div className="flex flex-row gap-[6px] justify-center pt-[35px]">
         <img src={tradeLogo} className="w-[42px] h-[42px]" />
         <h1 className="text-[24px] font-[600] leading-[47px] tracking-[1.37px] text-[#00000099]">
