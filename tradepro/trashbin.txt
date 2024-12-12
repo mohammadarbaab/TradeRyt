@@ -1,3 +1,358 @@
+
+                  <span className="absolute right-3 top-1/2 transform -translate-y-1/2 text-[#B0BAC9]">
+                    {/* Search Icon */}
+                    <img src={search} alt="search-logo" />
+                  </span>
+ 
+text-center
+ 
+text-cente
+ 
+ <button className="w-[140px] h-[40px] border border-[#009792] rounded-[6px] font-[600] text-[16px] text-center text-[#009792] ">
+                  Sell
+                  </button>
+ 
+
+                  Buy
+ 
+
+                <div className="flex flex-row gap-1">
+                <input className="w-[140px] h-[40px] border border-[#009792] rounded-[6px] font-[600] text-[16px] text-start text-[#009792] px-2"
+                  Buy
+                  />
+                  <input className="w-[140px] h-[40px] border border-[#009792] rounded-[6px] font-[600] text-[16px] text-start text-[#009792] px-2"
+                  Buy
+                  />
+                </div>
+ 
+150
+ 
+ <svg
+        xmlns="http://www.w3.org/2000/svg"
+        className="h-4 w-4"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        strokeWidth={2}
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M11 4a7 7 0 100 14 7 7 0 000-14zM21 21l-4.35-4.35"
+        />
+      </svg>
+ 
+ <div className="flex flex-col gap-1">
+                <label className="text-[12px] font-[400] leading-[16px] text-[#B0BAC9]">
+                  Symbol
+                </label>
+                <input className="h-[35px] border rounded-[6px] px-2 py-2 justify-between" placeholder="Search Symbol"
+                 />
+              </div>
+ 
+ <div className="flex flex-col gap-1">
+                <label className="text-[12px] font-[400] leading-[16px] text-[#B0BAC9]">
+                  Symbol
+                </label>
+                <input className="h-[35px] border rounded-[6px] px-2 py-2 justify-between" placeholder="Search Symbol"
+                 />
+              </div>
+ 
+px-2 py-2
+ 
+ <div className="flex flex-col gap-2">
+                
+                <div className=" flex flex-row gap-2">
+                  <button className="w-[70px] h-[40px] rounded-[6px] bg-[#41B18F] font-[600] text-[16px] text-center leading-[24px] text-[#FFFFFF]">
+                    Stocks
+                  </button>
+                  <button className="w-[70px] h-[40px] rounded-[6px] bg-[#41B18F] font-[600] text-[16px] text-center leading-[24px] text-[#FFFFFF]">
+                    Stocks
+                  </button>
+                  <button className="w-[70px] h-[40px] rounded-[6px] bg-[#41B18F] font-[600] text-[16px] text-center leading-[24px] text-[#FFFFFF]">
+                    Stocks
+                  </button>
+                  <button className="w-[70px] h-[40px] rounded-[6px] bg-[#41B18F] font-[600] text-[16px] text-center leading-[24px] text-[#FFFFFF]">
+                    Stocks
+                  </button>
+                </div>
+              </div>
+ 
+// इनएक्टिव बटन का स्टाइल
+ 
+// एक्टिव बटन का स्टाइल
+ 
+ <div className="flex flex-col gap-2">
+                <label className="text-[12px] font-[400] leading-[16px] text-[#B0BAC9]">
+                  Market
+                </label>
+                <div className=" flex flex-row gap-2">
+                  <button className="w-[70px] h-[40px] rounded-[6px] bg-[#41B18F] font-[600] text-[16px] text-center leading-[24px] text-[#FFFFFF]">
+                    Stocks
+                  </button>
+                  <button className="w-[70px] h-[40px] rounded-[6px] bg-[#41B18F] font-[600] text-[16px] text-center leading-[24px] text-[#FFFFFF]">
+                    Stocks
+                  </button>
+                  <button className="w-[70px] h-[40px] rounded-[6px] bg-[#41B18F] font-[600] text-[16px] text-center leading-[24px] text-[#FFFFFF]">
+                    Stocks
+                  </button>
+                  <button className="w-[70px] h-[40px] rounded-[6px] bg-[#41B18F] font-[600] text-[16px] text-center leading-[24px] text-[#FFFFFF]">
+                    Stocks
+                  </button>
+                </div>
+              </div>
+ 
+// बटन लेबल
+ 
+80
+ 
+  <button>2</button>
+                  <button>3</button>
+                  <button>4</button>
+ 
+
+              1
+ 
+absolute
+ 
+
+            </div>
+ 
+
+            <div className="">
+ 
+
+            </div>
+ 
+
+            <div className="">
+ 
+[200px]
+ 
+ <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+          <div className="relative w-[1000px] max-w-lg bg-white rounded-lg shadow-lg p-6">
+            {/* <button
+              className="absolute top-2 right-2 text-gray-500 hover:text-black"
+              onClick={closeModal}
+            >
+              &#10005; 
+            </button> */}
+            <AddTradesForm />
+          </div>
+        </div>
+ 
+{/* Cross Icon */}
+ 
+
+      <h2 className="text-xl font-semibold text-white"</h2>
+ 
+
+      <h2 className="text-xl font-semibold text-white"</h2>
+ 
+
+      {/* Add your form fields here */}
+ 
+
+      {/* <div className="flex flex-row gap-2">
+          <div className="">1</div>
+          <div className="">2</div>
+        </div> */}
+ 
+
+import AddTradesForm from "./Dashboard/Components/AddTrades/AddTradesForm";
+ 
+
+        {/* <Route path="/add-Trades-Form" element={<AddTradesForm />} /> */}
+ 
+<button className="w-[150px] h-[41px] rounded-[6px] bg-[#4159B1] text-[#FFFFFF] font-[600] text-[16px] text-center leading-[21px]">
+          <Link to="/add-Trades-Form">
+          Add Trades
+          </Link>
+        </button>
+ 
+function AddTradesForm() {
+  return (
+    <div className='bg-blue-400'>
+      AddTrades
+    </div>
+  )
+}
+ 
+AddTredes
+ 
+          <div className="flex flex-col gap-2">
+            <div className="flex flex-row gap-2">
+              <div className="w-[40px] border bg-gray-400 h-[60px] flex flex-wrap flex-col justify-center items-center">
+                <p>s</p>
+                <p>u</p>
+                <p>n</p>
+              </div>
+              <div className="w-[77px] h-[60px] bg-gray-300">1</div>
+              <div className="w-[77px] h-[60px] bg-gray-300">1</div>
+              <div className="w-[77px] h-[60px] bg-gray-300">1</div>
+              <div className="w-[77px] h-[60px] bg-gray-300">1</div>
+            </div>
+            <div className="flex flex-row gap-2">
+              <div className="w-[40px] border bg-gray-400 h-[60px] flex flex-wrap flex-col justify-center items-center">
+                <p>m</p>
+                <p>o</p>
+                <p>n</p>
+              </div>
+              <div className="w-[77px] h-[60px] bg-gray-300">1</div>
+              <div className="w-[77px] h-[60px] bg-gray-300">1</div>
+              <div className="w-[77px] h-[60px] bg-gray-300">1</div>
+              <div className="w-[77px] h-[60px] bg-gray-300">1</div>
+            </div>
+            <div className="flex flex-row gap-2">
+              <div className="w-[40px] border bg-gray-400 h-[60px] flex flex-wrap flex-col justify-center items-center">
+                <p>t</p>
+                <p>u</p>
+                <p>s</p>
+              </div>
+              <div className="w-[77px] h-[60px] bg-gray-300">1</div>
+              <div className="w-[77px] h-[60px] bg-gray-300">1</div>
+              <div className="w-[77px] h-[60px] bg-gray-300">1</div>
+              <div className="w-[77px] h-[60px] bg-gray-300">1</div>
+            </div>
+            <div className="flex flex-row gap-2">
+              <div className="w-[40px] border bg-gray-400 h-[60px] flex flex-wrap flex-col justify-center items-center">
+                <p>w</p>
+                <p>e</p>
+                <p>d</p>
+              </div>
+              <div className="w-[77px] h-[60px] bg-gray-300">1</div>
+              <div className="w-[77px] h-[60px] bg-gray-300">1</div>
+              <div className="w-[77px] h-[60px] bg-gray-300">1</div>
+              <div className="w-[77px] h-[60px] bg-gray-300">1</div>
+            </div>
+            <div className="flex flex-row gap-2">
+              <div className="w-[40px] border bg-gray-400 h-[60px] flex flex-wrap flex-col justify-center items-center">
+                <p>t</p>
+                <p>h</p>
+                <p>u</p>
+              </div>
+              <div className="w-[77px] h-[60px] bg-gray-300">1</div>
+              <div className="w-[77px] h-[60px] bg-gray-300">1</div>
+              <div className="w-[77px] h-[60px] bg-gray-300">1</div>
+              <div className="w-[77px] h-[60px] bg-gray-300">1</div>
+            </div>
+            <div className="flex flex-row gap-2">
+              <div className="w-[40px] border bg-gray-400 h-[60px] flex flex-wrap flex-col justify-center items-center">
+                <p>f</p>
+                <p>r</p>
+                <p>i</p>
+              </div>
+              <div className="w-[77px] h-[60px] bg-gray-300">1</div>
+              <div className="w-[77px] h-[60px] bg-gray-300">1</div>
+              <div className="w-[77px] h-[60px] bg-gray-300">1</div>
+              <div className="w-[77px] h-[60px] bg-gray-300">1</div>
+            </div>
+            <div className="flex flex-row gap-2">
+              <div className="w-[40px] border bg-gray-400 h-[60px] flex flex-wrap flex-col justify-center items-center">
+                <p>s</p>
+                <p>a</p>
+                <p>t</p>
+              </div>
+              <div className="w-[77px] h-[60px] bg-gray-300">1</div>
+              <div className="w-[77px] h-[60px] bg-gray-300">1</div>
+              <div className="w-[77px] h-[60px] bg-gray-300">1</div>
+              <div className="w-[77px] h-[60px] bg-gray-300">1</div>
+            </div>
+          </div>
+ 
+          <div className="flex flex-col gap-2">
+            <div className="flex flex-row gap-2">
+              <div className="w-[40px] border bg-gray-400 h-[60px] flex flex-wrap flex-col justify-center items-center">
+                <p>s</p>
+                <p>u</p>
+                <p>n</p>
+              </div>
+              <div className="w-[77px] h-[60px] bg-gray-300">1</div>
+              <div className="w-[77px] h-[60px] bg-gray-300">1</div>
+              <div className="w-[77px] h-[60px] bg-gray-300">1</div>
+              <div className="w-[77px] h-[60px] bg-gray-300">1</div>
+            </div>
+            <div className="flex flex-row gap-2">
+              <div className="w-[40px] border bg-gray-400 h-[60px] flex flex-wrap flex-col justify-center items-center">
+                <p>m</p>
+                <p>o</p>
+                <p>n</p>
+              </div>
+              <div className="w-[77px] h-[60px] bg-gray-300">1</div>
+              <div className="w-[77px] h-[60px] bg-gray-300">1</div>
+              <div className="w-[77px] h-[60px] bg-gray-300">1</div>
+              <div className="w-[77px] h-[60px] bg-gray-300">1</div>
+            </div>
+            <div className="flex flex-row gap-2">
+              <div className="w-[40px] border bg-gray-400 h-[60px] flex flex-wrap flex-col justify-center items-center">
+                <p>t</p>
+                <p>u</p>
+                <p>s</p>
+              </div>
+              <div className="w-[77px] h-[60px] bg-gray-300">1</div>
+              <div className="w-[77px] h-[60px] bg-gray-300">1</div>
+              <div className="w-[77px] h-[60px] bg-gray-300">1</div>
+              <div className="w-[77px] h-[60px] bg-gray-300">1</div>
+            </div>
+            <div className="flex flex-row gap-2">
+              <div className="w-[40px] border bg-gray-400 h-[60px] flex flex-wrap flex-col justify-center items-center">
+                <p>w</p>
+                <p>e</p>
+                <p>d</p>
+              </div>
+              <div className="w-[77px] h-[60px] bg-gray-300">1</div>
+              <div className="w-[77px] h-[60px] bg-gray-300">1</div>
+              <div className="w-[77px] h-[60px] bg-gray-300">1</div>
+              <div className="w-[77px] h-[60px] bg-gray-300">1</div>
+            </div>
+            <div className="flex flex-row gap-2">
+              <div className="w-[40px] border bg-gray-400 h-[60px] flex flex-wrap flex-col justify-center items-center">
+                <p>t</p>
+                <p>h</p>
+                <p>u</p>
+              </div>
+              <div className="w-[77px] h-[60px] bg-gray-300">1</div>
+              <div className="w-[77px] h-[60px] bg-gray-300">1</div>
+              <div className="w-[77px] h-[60px] bg-gray-300">1</div>
+              <div className="w-[77px] h-[60px] bg-gray-300">1</div>
+            </div>
+            <div className="flex flex-row gap-2">
+              <div className="w-[40px] border bg-gray-400 h-[60px] flex flex-wrap flex-col justify-center items-center">
+                <p>f</p>
+                <p>r</p>
+                <p>i</p>
+              </div>
+              <div className="w-[77px] h-[60px] bg-gray-300">1</div>
+              <div className="w-[77px] h-[60px] bg-gray-300">1</div>
+              <div className="w-[77px] h-[60px] bg-gray-300">1</div>
+              <div className="w-[77px] h-[60px] bg-gray-300">1</div>
+            </div>
+            <div className="flex flex-row gap-2">
+              <div className="w-[40px] border bg-gray-400 h-[60px] flex flex-wrap flex-col justify-center items-center">
+                <p>s</p>
+                <p>a</p>
+                <p>t</p>
+              </div>
+              <div className="w-[77px] h-[60px] bg-gray-300">1</div>
+              <div className="w-[77px] h-[60px] bg-gray-300">1</div>
+              <div className="w-[77px] h-[60px] bg-gray-300">1</div>
+              <div className="w-[77px] h-[60px] bg-gray-300">1</div>
+            </div>
+          </div>
+ 
+8
+ 
+
+            <div>1</div>
+            <div>1</div>
+            <div>1</div>
+ 
+
+                <div></div>
+ 
+
+            <div>2</div>
+ 
 backgroundSize: "cover",
             backgroundPosition: "center",
  

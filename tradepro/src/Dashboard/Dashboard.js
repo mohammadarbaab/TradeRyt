@@ -11,10 +11,6 @@ function Dashboard() {
       <div className="w-full bg-red-300">
         <DashHome />
       </div>
-      {/* <div className="flex flex-row gap-2">
-          <div className="">1</div>
-          <div className="">2</div>
-        </div> */}
     </div>
   );
 }

@@ -1,11 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import add_circle from "../../assests/add_circle.png";
 import profile_pic from "../../assests/profile_picture.png";
 import arrow_down from "../../assests/arrow-down.png";
 import nodataicon from "../../assests/no data icon.png";
 import bgAddtreders from "../../assests/bg-add-rades.png";
+import arrowLeft from "../../assests/arrow_left.png";
+import arrowRight from "../../assests/change_month.png";
+import arrow_up from "../../assests/arrow_up.png";
+import arrow_downC from "../../assests/arrow_Down.png";
+import { Link } from "react-router-dom";
+import AddTradesForm from "../Components/AddTrades/AddTradesForm";
 
 function DashHome() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => setIsModalOpen(true);
+  const closeModal = () => setIsModalOpen(false);
+
   return (
     <div className="flex flex-col mt-10 gap-10">
       <div className="flex flex-row gap-4 justify-end items-center pr-4">
@@ -28,9 +39,23 @@ function DashHome() {
             <p className="text-[16px] font-[400] text-[#8798AD]">Add</p>
           </div>
         </div>
-        <button className="w-[150px] h-[41px] rounded-[6px] bg-[#4159B1] text-[#FFFFFF] font-[600] text-[16px] text-center leading-[21px]">
+        <button
+          className="w-[150px] h-[41px] rounded-[6px] bg-[#4159B1] text-[#FFFFFF] font-[600] text-[16px] text-center leading-[21px]"
+          onClick={openModal}
+        >
           Add Trades
         </button>
+        {/* Modal */}
+        {isModalOpen && (
+          <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+            <div
+              className="relative w-[90%] max-w-[1200px] bg-white rounded-lg shadow-lg p-2"
+              style={{ maxWidth: "1200px", width: "60%" }}
+            >
+              <AddTradesForm closeModal={closeModal}/>
+            </div>
+          </div>
+        )}
         <div className="flex flex-row gap-2 w-[234px] h-[52px] border rounded-[14px] bg-[#FFFFFF]">
           <img src={profile_pic} alt="lg" className="pl-2 py-1" />
           <div className="flex flex-row gap-2 justify-center items-center bg-[#FFFFFF] ">
@@ -65,12 +90,109 @@ function DashHome() {
               trade.
             </p>
           </div>
-          <button className="w-[130px] h-[41px] rounded-[6px] bg-[#4159B1] text-[#FFFFFF] font-[600] text-[16px] text-center leading-[21px]">
+          <button
+            onClick={openModal}
+            className="w-[130px] h-[41px] rounded-[6px] bg-[#4159B1] text-[#FFFFFF] font-[600] text-[16px] text-center leading-[21px]"
+          >
             Add Trades
           </button>
         </div>
-
-        <div>2</div>
+        {/* Calender */}
+        <div className="flex flex-col gap-2 w-[390px] h-[590px] bg-green-500 rounded-[14px]">
+          {/* Top section start here */}
+          <div className="flex flex-row justify-between px-3 h-[42px] items-center bg-red-400">
+            <div className="flex flex-row gap-1">
+              <img src={arrowLeft} alt="arrLeft" />
+              <img src={arrowRight} alt="arrLeft" />
+              <p>October</p>
+            </div>
+            <div className="flex flex-row gap-1">
+              <p>2024</p>
+              <img src={arrow_up} alt="arrLeft" />
+              <img src={arrow_downC} alt="arrLeft" />
+            </div>
+          </div>
+          {/* top section end here */}
+          <div className="flex flex-col gap-2">
+            <div className="flex flex-row gap-2">
+              <div className="w-[40px] border bg-gray-400 h-[60px] flex flex-wrap flex-col justify-center items-center">
+                <p>s</p>
+                <p>u</p>
+                <p>n</p>
+              </div>
+              <div className="w-[77px] h-[60px] bg-gray-300">1</div>
+              <div className="w-[77px] h-[60px] bg-gray-300">1</div>
+              <div className="w-[77px] h-[60px] bg-gray-300">1</div>
+              <div className="w-[77px] h-[60px] bg-gray-300">1</div>
+            </div>
+            <div className="flex flex-row gap-2">
+              <div className="w-[40px] border bg-gray-400 h-[60px] flex flex-wrap flex-col justify-center items-center">
+                <p>m</p>
+                <p>o</p>
+                <p>n</p>
+              </div>
+              <div className="w-[77px] h-[60px] bg-gray-300">1</div>
+              <div className="w-[77px] h-[60px] bg-gray-300">1</div>
+              <div className="w-[77px] h-[60px] bg-gray-300">1</div>
+              <div className="w-[77px] h-[60px] bg-gray-300">1</div>
+            </div>
+            <div className="flex flex-row gap-2">
+              <div className="w-[40px] border bg-gray-400 h-[60px] flex flex-wrap flex-col justify-center items-center">
+                <p>t</p>
+                <p>u</p>
+                <p>s</p>
+              </div>
+              <div className="w-[77px] h-[60px] bg-gray-300">1</div>
+              <div className="w-[77px] h-[60px] bg-gray-300">1</div>
+              <div className="w-[77px] h-[60px] bg-gray-300">1</div>
+              <div className="w-[77px] h-[60px] bg-gray-300">1</div>
+            </div>
+            <div className="flex flex-row gap-2">
+              <div className="w-[40px] border bg-gray-400 h-[60px] flex flex-wrap flex-col justify-center items-center">
+                <p>w</p>
+                <p>e</p>
+                <p>d</p>
+              </div>
+              <div className="w-[77px] h-[60px] bg-gray-300">1</div>
+              <div className="w-[77px] h-[60px] bg-gray-300">1</div>
+              <div className="w-[77px] h-[60px] bg-gray-300">1</div>
+              <div className="w-[77px] h-[60px] bg-gray-300">1</div>
+            </div>
+            <div className="flex flex-row gap-2">
+              <div className="w-[40px] border bg-gray-400 h-[60px] flex flex-wrap flex-col justify-center items-center">
+                <p>t</p>
+                <p>h</p>
+                <p>u</p>
+              </div>
+              <div className="w-[77px] h-[60px] bg-gray-300">1</div>
+              <div className="w-[77px] h-[60px] bg-gray-300">1</div>
+              <div className="w-[77px] h-[60px] bg-gray-300">1</div>
+              <div className="w-[77px] h-[60px] bg-gray-300">1</div>
+            </div>
+            <div className="flex flex-row gap-2">
+              <div className="w-[40px] border bg-gray-400 h-[60px] flex flex-wrap flex-col justify-center items-center">
+                <p>f</p>
+                <p>r</p>
+                <p>i</p>
+              </div>
+              <div className="w-[77px] h-[60px] bg-gray-300">1</div>
+              <div className="w-[77px] h-[60px] bg-gray-300">1</div>
+              <div className="w-[77px] h-[60px] bg-gray-300">1</div>
+              <div className="w-[77px] h-[60px] bg-gray-300">1</div>
+            </div>
+            <div className="flex flex-row gap-2">
+              <div className="w-[40px] border bg-gray-400 h-[60px] flex flex-wrap flex-col justify-center items-center">
+                <p>s</p>
+                <p>a</p>
+                <p>t</p>
+              </div>
+              <div className="w-[77px] h-[60px] bg-gray-300">1</div>
+              <div className="w-[77px] h-[60px] bg-gray-300">1</div>
+              <div className="w-[77px] h-[60px] bg-gray-300">1</div>
+              <div className="w-[77px] h-[60px] bg-gray-300">1</div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
